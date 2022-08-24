@@ -1,0 +1,1835 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+  *{
+    margin:0;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+  }
+/*--------------------------------------------- INDEX RESPONSIVE FLEXBOX --------------------------------------*/
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+  #index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    width: 100%;
+  }
+  .logo i{
+    display: none;
+  }
+  .item{
+    padding: 1rem;
+  }
+
+  nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0.5em;
+  }
+  nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+  }
+
+  .logo img{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .menu-hr{
+    display: none;
+  }
+
+  .navbar-button{
+    display: none;
+  }
+
+  #calles{
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 8rem;
+    font-size: 2em;
+  }
+
+  #text1{
+    background-color: var(--blanco);
+    height: 25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding:1rem 2rem;
+  }
+
+  #text1 p{
+    margin-top: 5em;
+    padding-left:6em;
+    padding-right: 5em;
+  }
+
+  #text1 img{
+    width: 15em;
+    padding-right: 10rem;
+  }
+
+  #text img{
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 20rem;
+  }
+  
+  #features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 1rem;
+    background-size: cover;
+    height: 15em;
+  }
+
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+  }
+
+  .features-description{
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .feature{
+    width: 100%;
+    min-width: 110px;
+    max-width: 160px;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-blue{
+    background-color: #00325eae;
+  }
+
+  .feature-black{
+    background-color: rgba(0,0,0,0.59);
+  }
+  
+  #ubi{
+    flex-flow: space-around;
+    width: 100%;
+  }
+
+  #ubi h1{
+    margin-top: 1em;
+    height: 5rem;
+    font-size: 3em;
+  }
+
+  #ubi iframe{
+    padding: 3rem;
+    width: 95%;
+  }
+
+  #ubi h3{
+    font-size: 1.7em;
+    height: 3em;
+  }
+
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+
+  #usuarios{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 7rem;
+  }
+
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 8rem;
+    margin-bottom: 7rem;
+    background: linear-gradient(rgb(0, 0, 0) 40%, white 0%);
+  }
+
+  #per .personas{
+    padding: 1em;
+    color: white;
+    font-size: 0.8em;
+    width: 15rem;
+    height: 8rem;
+    text-align: center;
+  }
+
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-position: 10% 50%;
+  }
+
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+
+  #per p{
+    font-size: 0.7rem;
+  }
+
+  #Mas-info{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #Mas-info p{
+    color: white;
+  }
+
+  .lorem-redes{
+    padding: 1.2em;
+    text-align: left;
+    width: 13em;
+  }
+
+  .direccion-telefono{
+    text-align: left;
+    padding: 1.25em;
+    width: 16em;
+    margin-left: 3rem;
+  }
+
+  .pp{
+    padding: 1em;
+    text-align: left;
+    margin-right: 3rem;
+    width: 13em;
+  }
+
+  .lineasecundaria{
+    display: none;
+  }
+}
+
+
+/*Resolución tablet*/
+@media screen and (max-width: 799.8px){
+  .logo{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .logo img{
+    width: 40%;
+    max-width: 200px;   
+  }
+  .logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+  }
+
+  .menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    font-size: 1.5em;
+  }
+
+  .menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+  }
+  .item{
+  padding: 1rem;
+  }
+
+  nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+  }
+
+  .navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+  }
+
+  #calles{
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 8rem;
+    font-size: 2em;
+  }
+
+  #text1{
+    background-color: var(--blanco);
+    height: 35rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.2rem 0.2rem;
+  }
+
+  #text1 p{
+    margin-top: 2em;
+    padding-left: 1.em;
+    padding-right: 1em;
+    display: flex;
+  }
+
+  #text1 img{
+    width: 10em;
+    padding-right: 1.5rem;
+  }
+
+  #features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 0rem;
+    background-size: cover;
+    height: 25em;
+  }
+
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .features-description{
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .feature{
+    width: 90%;
+    min-width: 10px;
+    max-width: 145px;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-blue{
+    background-color: #00325eae;
+  }
+
+  .feature-black{
+    background-color: rgba(0,0,0,0.59);
+  }
+  
+  #ubi{
+    flex-flow: space-around;
+    width: 100%;
+  }
+
+  #ubi h1{
+    margin-top: 0.6em;
+    height: 2rem;
+    font-size: 2em;
+  }
+
+  #ubi iframe{
+    padding: 2rem;
+    width: 87%;
+  }
+
+  #ubi h3{
+    font-size: 1em;
+    height: 3em;
+  }
+
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+
+  #usuarios{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 5rem;
+  }
+
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 18rem;
+    margin-bottom: 18rem;
+    
+  }
+
+  #per .personas{
+    margin-top: 1em;
+    padding: 3.6em;
+    color: white;
+    font-size: 0.8em;
+    width: 12rem;
+    height: 5rem;
+    text-align: center;
+  }
+
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+
+  #per i{
+    display: none;
+  }
+
+  #per p{
+    font-size: 0.7rem;
+  }
+
+  #Mas-info{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #Mas-info p{
+    color: white;
+  }
+
+  .lorem-redes{
+    text-align: left;
+    padding-top: 1em;
+  }
+
+  .direccion-telefono{
+    text-align: left;
+  }
+
+  .pp{
+    text-align: left;
+    margin-right: 12rem;
+    margin-bottom: 6em;
+  }
+}
+
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+  .logo{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .logo img{
+    width: 40%;
+    max-width: 200px;   
+  }
+  .logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+  }
+
+  .menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  .menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+  }
+  .item{
+  padding: 1rem;
+  }
+
+  nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+  }
+
+  .navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+  }
+
+  #calles{
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 5rem;
+    font-size: 1em;
+  }
+
+  #text1{
+    background-color: var(--blanco);
+    height: 21rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 1rem;
+  }
+
+  #text1 p{
+    margin-top: 0.5em;
+  }
+
+  #text1 img{
+    display: none;
+  }
+
+  #text img{
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 20rem;
+  }
+  
+  #features{
+    background: url(../img/index/bg-features.png);
+    background-size: cover;
+    background-position: 70% 70%;
+    height: 250px;
+  }
+
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 1em;
+    color: white;
+  }
+
+  .features-description{
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .feature{
+    width: 100%;
+    min-width: 80px;
+    max-width: 8px;
+    height: 3em;
+    margin: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .feature i{
+    margin-top: 1em;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+  }
+  
+  .feature p{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 0.6em;
+  }
+  .feature-blue{
+    color: white;
+    background-color: #00325eae;
+  }
+
+  .feature-black{
+    color: white;
+    background-color: rgba(0,0,0,0.59);
+  }
+  
+  #ubi{
+    flex-flow: space-around;
+    width: 100%;
+  }
+
+  #ubi h1{
+    margin-top: 1em;
+    height: 2rem;
+    font-size: 2em;
+  }
+
+  #ubi iframe{
+    padding: 1.5rem;
+    width: 90%;
+    height: 20em;
+  }
+
+  #ubi h3{
+    font-size: 1em;
+    height: 3em;
+  }
+
+  .lineaubi{
+    width: 83%;
+    margin-left: 2em;
+  }
+  
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+
+  #usuarios{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 7rem;
+  }
+
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 18rem;
+    margin-bottom: 18rem;
+  }
+
+  #per .personas{
+    margin-top: 1em;
+    padding: 3.6em;
+    color: white;
+    font-size: 0.8em;
+    width: 12rem;
+    height: 5rem;
+    text-align: center;
+  }
+
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-position: 10% 50%; 
+  }
+
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+
+  #per i{
+    display: none;
+  }
+
+  #per p{
+    font-size: 0.7rem;
+  }
+
+  #Mas-info{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  #Mas-info p{
+    color: white;
+  }
+
+  .lorem-redes{
+    text-align: left;
+    padding-top: 1em;
+  }
+
+  .direccion-telefono{
+    text-align: left;
+  }
+
+  .pp{
+    text-align: left;
+    margin-right: 10rem;
+    margin-bottom: 5em;
+  }
+}
+
+/*----------------------------------------------------- INISIAR SESION -------------------------------------------------*/
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 600px){
+  #Habitacion{
+    background: url(../img/flogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    display: flex;
+    width: 100%;
+  }
+
+  .home{
+    color: white;
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  #Hotelia3{
+    text-align: center;
+  }
+
+  #Login img{
+    height: 5em;
+    width: 10em;
+    position: relative;
+    top: 0.7em;
+    left: 9%;
+  }
+
+  #Login{
+    background: url(../img/curva_login_blanco.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  #Login{
+    background-color: #2881ce9c;
+    width: 27rem;
+    height: 28rem;
+    margin-top: 10rem;
+    margin-left: 28em;
+  }
+  
+  .user{
+    font-size: 2.6em;
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+    margin-left: 12rem;
+    background-color: var(--Magenta);
+    border-radius: 0.6em;
+    width: 1.3em;
+    height: 1.3em;
+  }
+  
+  .fa-user{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  #Login p{
+    color: white;
+    text-align: left;
+    padding-left: 3.5em;
+    font-size: 1.2em;
+  }
+
+  #Login a{
+    color:#000
+  }
+
+  .Controles{
+    width: 18rem;
+    height: 1.5rem;
+  }
+  .BotonLogin{
+    font-size: 1.1em;
+    width: 18.6rem;
+    height: 2rem;
+    background-color: var(--negro2);
+    color: white;
+  }
+  .cuenta{
+    font-size: 0.2em;
+    margin-top: 1em;
+    margin-left: 0em;
+  }
+}
+
+
+/*Resolución tablet*/
+@media screen and (max-width: 799.8px){
+  #Habitacion{
+    background: url(../img/flogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    display: flex;
+    width: 100%;
+  }
+
+  .home{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  #Hotelia3{
+    text-align: center;
+  }
+
+  #Login img{
+    height: 5em;
+    width: 10em;
+    position: relative;
+    top: 0.7em;
+    left: 9%;
+  }
+
+  #Login{
+    background: url(../img/curva_login_blanco.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  #Login{
+    background-color: #2881ce9c;
+    width: 27rem;
+    height: 28rem;
+    margin-top: 2rem;
+    margin-left: 3em;
+  }
+  
+  .user{
+    font-size: 2.6em;
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+    margin-left: 12rem;
+    background-color: var(--Magenta);
+    border-radius: 0.6em;
+    width: 1.3em;
+    height: 1.3em;
+  }
+  
+  .fa-user{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  #Login p{
+    color: white;
+    text-align: left;
+    padding-left: 3.5em;
+    font-size: 1.2em;
+  }
+
+  #Login a{
+    color:#000
+  }
+
+  .Controles{
+    width: 18rem;
+    height: 1.5rem;
+  }
+  .BotonLogin{
+    font-size: 1.1em;
+    width: 18.6rem;
+    height: 2rem;
+    background-color: var(--negro2);
+    color: white;
+  }
+  .cuenta{
+    font-size: 0.2em;
+    margin-top: 1em;
+    margin-left: 0em;
+  }
+}
+
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+  #Habitacion{
+    background: url(../img/flogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    display: flex;
+    width: 100%;
+  }
+
+  .home{
+    color: white;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+  }
+
+  #Hotelia3{
+    text-align: center;
+  }
+
+  #Login img{
+    height: 4em;
+    width: 9em;
+    position: relative;
+    top: 0.6em;
+    left: 7%;
+  }
+
+  #Login{
+    background: url(../img/curva_login_blanco.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  #Login{
+    background-color: #2881ce9c;
+    width: 18rem;
+    height: 23rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    margin-left: 1.5em;
+  }
+  
+  .user{
+    font-size: 2.3em;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+    margin-left: 8rem;
+    background-color: var(--Magenta);
+    border-radius: 0.6em;
+    width: 1.3em;
+    height: 1.3em;
+  }
+  
+  .fa-user{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  #Login p{
+    color: white;
+    text-align: left;
+    padding-left: 3em;
+    font-size: 0.9em;
+    
+  }
+
+  #Login a{
+    color:#000
+  }
+
+  .Controles{
+    width: 13rem;
+    height: 1.5rem;
+  }
+  .BotonLogin{
+    font-size: 0.7em;
+    width: 13rem;
+    height: 2rem;
+    background-color: var(--negro2);
+    color: white;
+  }
+  .cuenta{
+    display: none;
+  }
+}
+
+/*-----------------------------------------------------------DASHBOARD-----------------------------------------------------------*/
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 500px){
+  #dash1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #dash{
+    background-color: var(--negro);
+    width: 15.5em;
+    height: 47em;
+  }
+
+  #dash01{
+    display: none;
+  }
+
+  .ifasolid{
+    display: none;
+  }
+  #dash2{
+    background: url(../img/curvadashboard.jpg);
+    background-repeat: no-repeat;
+    height: 12em;
+    width: 15.5em;
+  }
+
+  .img1{
+    width: 15.5em;
+  } 
+  .img2{
+    text-align: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 3em;
+  }
+  .AnguieV h3{
+    margin-left: 3.5em;
+    color: white;
+  }
+
+  .AnguieV p{
+    margin-left: 5.5em;
+    color: white;
+    font-size: 0.7em;
+  }
+
+  .menu2{
+    color: white;
+  }
+
+  .fa-bed{
+    font-size: 2em;
+    padding-right: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+  }
+
+  .fa-bell-concierge{
+    font-size: 2em;
+    padding-right: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+  }
+  .itemss{
+    margin-right: 0.7em;
+  }
+  
+  .cerrar{
+    padding-top: 11em;
+    margin-left: 1.6em;
+    font-size: 1.4em;
+    color: white;
+  }
+
+  #cuerporegistro{
+    background: url(../img/fdashboard.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 47em;
+  }
+
+  #An{
+    background-size: cover;
+    background-color: rgba(213, 212, 214, 0.838);
+    border-radius: 1em;
+    height: 41em;
+    margin: 2em;
+  }
+
+  #An h2{
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 10em;
+  }
+  
+  #Ann{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Controles2{
+    margin-top: 0.5em;
+    width: 17em;
+    height: 2em;
+  }
+
+  #Ann p{
+    margin-top: 0.5em;
+  }
+    
+  .an2 img{
+    padding-top: 1em;
+    width: 10em;
+  }
+
+  .an2{
+    padding-top: 1em;
+    padding-left: 2em;
+  }
+
+  .an2 p{
+    background-color: var(--azuloscuro);
+    color: white;
+    width: 10em;
+    height: 2.2em;
+  }
+  .an2 i{
+    padding-left: 1.5em;
+    margin-top: 0.05em;
+    font-size: 1.8em;
+  }
+
+  .cambiocontraseña{
+    background-color: var(--negro);
+    color: white;
+    margin-top: 2em;
+    width: 12em;
+    height: 6em;
+  }
+
+  #contraseña{
+    width: 17em;
+    height: 2em;
+  }
+  
+  .an3{
+    padding-top: 1.2em;
+    padding-left: 1em;
+  }
+
+
+  .an4{
+    padding-top: 1.2em;
+    padding-left: 1em;
+  }
+
+  .actualizar{
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+    margin-top: 2em;
+    width: 10em;
+    height: 2em;
+    color: white;
+    background-color: var(--negro2);
+  }
+
+  .Cambiar{
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    width: 10em;
+    height: 2em;
+    color: white;
+    background-color: var(--negro2);
+  }
+
+  .confirmicontra{
+    margin-top: 7.3em;
+  }
+
+  .confirmicontra input{
+    margin-top: 0.5em;
+    height: 2em;
+    width: 17em;
+  }
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 499.9px){
+  #dash1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #dash{
+    display: none;
+  }
+
+  .menulateral1{
+    background-color: var(--azulnegro);
+    height: 47em;
+    width: 3em;
+  }
+
+  .menuencabezado1{
+    background: url(../img/curvadashboard.jpg);
+    background-size: cover;
+  }
+
+  .menuencabezado1 img{
+    width: 30px;
+    padding-left: 0.5em;
+    padding-top: 1em;
+  }
+  .iconosmenu1 i{
+    color: white;
+    text-align: center;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    font-size: 1em;
+  }
+  .salida1 i{
+    color: white;
+    text-align: center;
+    padding-left: 1em;
+    padding-top: 20em;
+    font-size: 1em;
+  }
+
+  #cuerporegistro{
+    background: url(../img/fdashboard.jpeg);
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    background-size: cover;
+    width: 100%;
+    height: 47em;
+  }
+
+  #An{
+    background-size: cover;
+    background-color: rgba(213, 212, 214, 0.838);
+    border-radius: 1em;
+    height: 45em;
+    width: 14em;
+    margin: 0.8em;
+  }
+
+  #An h2{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.1em;
+  }
+  
+  #Ann{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Ann p{
+    margin-top: 0.2em;
+  }
+
+  .Controles2{
+    width: 14em;
+    height: 1em;
+  }
+
+  .an2 img{
+    padding-left: 2em;
+    width: 6em;
+  }
+
+  .an2{
+    padding-left: 2em;
+  }
+
+  .an2 p{
+    margin-left: 2em;
+    background-color: var(--azuloscuro);
+    color: white;
+    width: 6em;
+    height: 1.5em;
+  }
+  
+  .ann2{
+    display: none;
+  }
+
+  .an2 i{
+    padding-left: 2em;
+    margin-top: 0.1em;
+    font-size: 1.2em;
+  }
+
+  .cambiocontraseña{
+    display: none;
+  }
+
+  #contraseña{
+    width: 14em;
+    height: 1em;
+  }
+  
+  .an3{
+    padding-left: 1em;
+  }
+
+  .an4{
+    padding-left: 1em;
+  }
+
+  .actualizar{
+    font-family: 'Marcellus', serif;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    width: 6em;
+    height: 1.5em;
+    color: white;
+    background-color: var(--negro2);
+  }
+
+  .Cambiar{
+    font-family: 'Marcellus', serif;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    width: 6em;
+    height: 1.5em;
+    color: white;
+    background-color: var(--negro2);
+  }
+
+  .confirmicontra{
+    margin-top: 0.2em;
+  }
+
+  .confirmicontra input{
+    margin-top: 0.7Sem;
+    width: 14em;
+    height: 1em;
+  }
+}
+
+/*-----------------------------------------------------------Nuevo Registro-----------------------------------------------------------*/
+@media screen and (min-width: 700px){
+  
+  #body{
+    background: url(../img/nuevoresgistro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 47rem;
+  }
+
+  #cuerporegistrate{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #primeraparte{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    background-color:  var(--azuloscuro);
+    background-color: #05569dad;
+    font-family: 'Marcellus', serif;
+    width: 25em;
+    height: 47rem;
+  }
+
+  #primeraparte a{
+    padding-top: 15em;
+    text-align: center;
+  }
+
+
+  #primeraparte p{
+    margin-top:0.3em;
+    text-align: center;
+    font-size: 2.4em;
+    color: white;
+  }
+
+  #segundaparte{
+    background-size: cover;
+    background-color: rgba(213, 212, 214, 0.838);
+    border-radius: 1em;
+    width: 80em;
+    height: 43em;
+    margin: 2em;
+  }
+
+  #segundaparte h1{
+    font-family: 'Marcellus', serif;
+    font-size: 3em;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
+  #segundaparte2{
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .izq{
+    margin-left: 4em;
+    padding-right: 2em;
+  }
+
+  .Gen{
+    margin-top: 1.1em;
+  }
+
+  .adicional{
+    margin-top: 1em;
+    width: 17em;
+    height: 2em;
+  }
+
+  #terminoscondiciones{
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .ingre{margin-left: 14em;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+    width: 10em;
+    height: 2em;
+    color: white;
+    background-color: var(--negro2);
+  }
+}
+
+@media screen and (max-width: 699.9px){
+  body{
+    background: url(../img/nuevoresgistro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 55rem;
+  }
+
+  #cuerporegistrate{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #primeraparte{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    background-color:  var(--azuloscuro);
+    background-color: #05569dad;
+    font-family: 'Marcellus', serif;
+    width: 100%;
+    height: 4rem;
+  }
+
+  #primeraparte a{
+    text-align: center;
+  }
+
+  img{
+    width: 5em;
+    height: 2.5em;
+  }
+
+
+  #primeraparte p{
+    text-align: center;
+    font-size: 0.7em;
+    color: white;
+  }
+
+  .Controles2{
+    width: 17em;
+    height: 1em;
+  }
+
+  #contraseña{
+    width: 17em;
+    height: 1em;
+  }
+
+  #segundaparte{
+    background-size: cover;
+    background-color: rgba(213, 212, 214, 0.838);
+    border-radius: 1em;
+    width: 19em;
+    height: 52em;
+    margin-left: 1em;
+  }
+
+  #segundaparte p{
+    font-size: 1em;
+  }
+
+  #segundaparte h1{
+    font-family: 'Marcellus', serif;
+    text-align: center;
+  }
+
+  #segundaparte2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izq{
+    margin-left: 1em;
+  }
+
+  .izq p{
+    font-size: 1em;
+  }
+  
+  .der{
+    margin-left: 1em;
+  }
+
+  .der p{
+    font-size: 1em;
+  }
+
+  .adicional{
+    width: 17em;
+    height: 1em;
+  }
+
+  #terminoscondiciones{
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  .ingre{
+    margin-left: 5em;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+    width: 6em;
+    height: 1.5em;
+    color: white;
+    background-color: var(--negro2);
+  }
+}
+
+/*----------------------------------------------------------- Formulario Habitación-----------------------------------------------------------*/
+
+#habitacion{
+  display: flex;
+  flex-direction: row;
+}
+
+.menulateral{
+  display: none;
+}
+
+.habitacion2{
+  background-color: white;
+  width: 15.5em;
+  height: 47em;
+}
+
+.habitacion3{
+  background: url(../img/forhabitacion.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 47em;
+}
+
+.habitacion4{
+  background-color: rgba(213, 212, 214, 0.838);
+  border-radius: 1em;
+  height: 41em;
+  margin: 3em;
+}
+
+.titulo{
+  font-family: 'Marcellus', serif;
+  font-size: 2.5em;
+  padding-top: 0.8em;
+  text-align: center;
+}
+
+.habitacion5{
+  display: flex;
+  flex-direction: row;
+}
+
+.habitacion6{
+  padding-left: 3em;
+  padding-top: 1em;
+  width: 20em;
+}
+
+.habitacion6 p{
+  padding-top: 1em;
+}
+.nombrehabitacion{
+  margin-top: 0.5em;
+  width: 23em;
+}
+
+.habitacion7{
+  display: flex;
+  flex-direction: row;
+}
+
+.habi7{
+  flex-direction: column;
+  padding-right: 2em;
+}
+
+.ncamas{
+  width: 10em;
+}
+
+.habit7{
+  flex-direction: column;
+}
+
+.nhuespedes{
+  width: 10em;
+}
+
+.iprincipal{
+  margin-top: 0.1em;
+  width: 23em;
+}
+
+.habitacion8{
+  padding-left: 5em;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.habitacion8 p{
+  margin-top: 0.5em;
+}
+
+.habitacion8 input{
+  width: 15em;
+  margin-top: 0.5em;
+}
+
+.habitacion9{
+  padding-left: 3em;
+  margin-top: 2em;
+}
+
+.habitacion9 input{
+  width: 45em;
+  height: 5em;
+}
+
+#checkboxs{
+  margin-top: 3em;
+  padding-left: 3em;
+}
+
+.fa-solid{
+  padding-right: 1.7em;
+  font-size: 2em;
+}
+
+#registarf{
+  text-align: center;  
+}
+
+.registar{
+  width: 10em;
+  height: 2em;
+  margin-top: 3em; 
+  background-color: var(--negro);
+  color: white;
+  font-family: 'Marcellus', serif;
+}
+
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 500px){
+  #dash1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #dash{
+    background-color: var(--negro);
+    width: 15.5em;
+    height: 47em;
+  }
+
+  #dash01{
+    display: none;
+  }
+
+  .ifasolid{
+    display: none;
+  }
+  #dash2{
+    background: url(../img/curvadashboard.jpg);
+    background-repeat: no-repeat;
+    height: 12em;
+    width: 15.5em;
+  }
+
+  .img1{
+    width: 15.5em;
+  } 
+  .img2{
+    text-align: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 3em;
+  }
+  .AnguieV h3{
+    margin-left: 3.5em;
+    color: white;
+  }
+
+  .AnguieV p{
+    margin-left: 5.5em;
+    color: white;
+    font-size: 0.7em;
+  }
+
+  .menu2{
+    color: white;
+  }
+
+  .fa-bed{
+    font-size: 2em;
+    padding-right: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+  }
+
+  .fa-bell-concierge{
+    font-size: 2em;
+    padding-right: 1em;
+    margin-left: 1em;
+    padding-top: 1em;
+  }
+  .itemss{
+    margin-right: 0.7em;
+  }
+  
+  .cerrar{
+    padding-top: 11em;
+    margin-left: 1.6em;
+    font-size: 1.4em;
+    color: white;
+  }
+}

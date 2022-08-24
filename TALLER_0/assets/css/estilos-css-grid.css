@@ -1,0 +1,1236 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+ 
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+ 
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+/*-------------------------------------------------------- Index GRID -------------------------------------------------------------------*/
+/*
+Menu horizontal 
+#index{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-size: 1.3em;
+  width: 100%;
+}
+.logo i{
+  display: none;
+}
+.item{
+  padding: 1rem;
+}
+
+nav a{
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0.5em;
+}
+nav a:hover{
+  background-color: #0B3860;
+  width: 100%;
+}
+
+.logo img{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.menu-hr{
+  display: none;
+}
+
+.navbar-button{
+  display: none;
+}
+*/
+@media screen and (mIN-width: 800px) {
+nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "menu";
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.logo {
+    grid-area: logo;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo-img menu-bars";
+    background-color: var(--negro2);
+    padding: 1rem;
+}
+.logo img {
+    justify-self: start;
+    width: 50%;
+    max-width: 180px;
+}
+.logo i {
+    grid-area: menu-bars;
+    justify-self: end;
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.menu {
+    grid-area: menu;
+    display: grid;
+    background-color: rgba(1, 10, 52, 0.838);
+}
+.menu-hr {
+    width: 90%;
+    background-color: var(--blanco);
+    justify-self: center; /*para centrar el hr*/
+}
+ 
+.item {
+    padding: 1rem 0;
+}
+ 
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+ 
+nav a:hover {
+    background-color: #0B3860;
+    width: 100%;
+}
+ 
+.navbar-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+#banner {
+    background-image: url('../img/index//slide1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
+    margin-top: 60px;
+}
+#calles{
+    grid-area: calles;
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 9rem;
+    font-size: 2em;
+  }
+
+  #text1{
+    grid-area: text1;
+    background-color: var(--blanco);
+    height: 25rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding:1rem 2rem;
+  }
+
+  #text1 p{
+    margin-top: 5em;
+    padding-left: 3em;
+    padding-right: 5em;
+  }
+
+  #text1 img{
+    width: 15em;
+    padding-right: 5rem;
+  }
+
+  #text img{
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 20rem;
+  }
+  
+  #features{
+    grid-area: features;
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 1rem;
+    background-size: cover;
+    height: 15em;
+  }
+
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1.7em;
+    height: 1.2em;
+  }
+
+  .features-description{
+    grid-area: description;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1em;
+  }
+
+  .feature{
+    width: 100%;
+    min-width: 110px;
+    max-width: 160px;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-blue{
+    background-color: #00325eae;
+  }
+
+  .feature-black{
+    background-color: rgba(0,0,0,0.59);
+  }
+  
+  #ubi{
+    grid-area: ubi;
+    flex-flow: space-around;
+    width: 100%;
+  }
+
+  #ubi h1{
+    margin-top: 1em;
+    height: 5rem;
+    font-size: 3em;
+  }
+
+  #ubi iframe{
+    padding: 3rem;
+    width: 95%;
+  }
+
+  #ubi h3{
+    font-size: 1.7em;
+    height: 3em;
+  }
+
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+
+  #usuarios{
+    grid-area: usuarios;
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 7rem;
+  }
+
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #per {
+    grid-area: per;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 8rem;
+    margin-bottom: 7rem;
+    background: linear-gradient(rgb(0, 0, 0) 40%, white 0%);
+  }
+
+  #per .personas{
+    padding: 1em;
+    color: white;
+    font-size: 0.8em;
+    width: 15rem;
+    height: 8rem;
+    text-align: center;
+  }
+
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-position: 10% 50%;
+  }
+
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+
+  #per p{
+    font-size: 0.7rem;
+  }
+
+  #Mas-info{
+    grid-area: Mas-info;
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #Mas-info p{
+    color: white;
+  }
+
+  .lorem-redes{
+    padding: 1.2em;
+    text-align: left;
+    width: 13em;
+  }
+
+  .direccion-telefono{
+    text-align: left;
+    padding: 1.25em;
+    width: 16em;
+    margin-left: 3rem;
+  }
+
+  .pp{
+    padding: 1em;
+    text-align: left;
+    margin-right: 3rem;
+    width: 13em;
+  }
+
+  .lineasecundaria{
+    display: none;
+  }
+ }
+/*Resolución tabletas*/
+@media screen and (max-width: 799.8px) {
+  .logo{
+    grid-area: logo;
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .logo img{
+    width: 40%;
+    max-width: 200px;   
+  }
+  .logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+  }
+  
+  .menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    font-size: 1.5em;
+  }
+  
+  .menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+  }
+
+  .item{
+    padding: 1rem;
+  }
+  
+  nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+  }
+  
+  .navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+  }
+  
+  #calles{
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 8rem;
+    font-size: 2em;
+  }
+  
+  #text1{
+    background-color: var(--blanco);
+    height: 35rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.2rem 0.2rem;
+  }
+  
+  #text1 p{
+    margin-top: 2em;
+    padding-left: 1.em;
+    padding-right: 1em;
+    display: flex;
+  }
+  
+  #text1 img{
+    width: 10em;
+    padding-right: 1.5rem;
+  }
+  
+  #features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 0rem;
+    background-size: cover;
+    height: 25em;
+  }
+  
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .features-description{
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .feature{
+    width: 90%;
+    min-width: 10px;
+    max-width: 145px;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+  }
+    
+  .feature-blue{
+    background-color: #00325eae;
+  }
+  
+  .feature-black{
+    background-color: rgba(0,0,0,0.59);
+  }
+    
+  #ubi{
+    flex-flow: space-around;
+    width: 100%;
+  }
+  
+  #ubi h1{
+    margin-top: 0.6em;
+    height: 2rem;
+    font-size: 2em;
+  }
+  
+  #ubi iframe{
+    padding: 2rem;
+    width: 87%;
+  }
+  
+  #ubi h3{
+    font-size: 1em;
+    height: 3em;
+  }
+  
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+  
+  #usuarios{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 5rem;
+  }
+  
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  #per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 18rem;
+    margin-bottom: 18rem; 
+  }
+  
+  #per .personas{
+    margin-top: 1em;
+    padding: 3.6em;
+    color: white;
+    font-size: 0.8em;
+    width: 12rem;
+    height: 5rem;
+    text-align: center;
+  }
+  
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+  
+  #per i{
+    display: none;
+  }
+  
+  #per p{
+    font-size: 0.7rem;
+  }
+  
+  #Mas-info{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  #Mas-info p{
+    color: white;
+  }
+  
+  .lorem-redes{
+    text-align: left;
+    padding-top: 1em;
+  }
+  
+  .direccion-telefono{
+    text-align: left;
+  }
+  
+  .pp{
+    text-align: left;
+    margin-right: 12rem;
+    margin-bottom: 6em;
+  }
+
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+  .logo{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .logo img{
+    width: 40%;
+    max-width: 200px;   
+  }
+  .logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+  }
+
+  .menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  .menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+  }
+  .item{
+  padding: 1rem;
+  }
+
+  nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+  }
+
+  .navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+  }
+
+  #calles{
+    background: url(../img/index/slide1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #calles h1{
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 5rem;
+    font-size: 1em;
+  }
+
+  #text1{
+    background-color: var(--blanco);
+    height: 21rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 1rem;
+  }
+
+  #text1 p{
+    margin-top: 0.5em;
+    font-size: 0.9em;
+  }
+
+  #text1 img{
+    display: none;
+  }
+
+  #text img{
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 20rem;
+  }
+  
+  #features{
+    background: url(../img/index/bg-features.png);
+    background-size: cover;
+    background-position: 70% 70%;
+    height: 250px;
+  }
+
+  .features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 1em;
+    color: white;
+  }
+
+  .features-description{
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .feature{
+    width: 100%;
+    min-width: 80px;
+    max-width: 8px;
+    height: 3em;
+    margin: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .feature i{
+    margin-top: 1em;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+  }
+  
+  .feature p{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 0.6em;
+  }
+  .feature-blue{
+    color: white;
+    background-color: #00325eae;
+  }
+
+  .feature-black{
+    color: white;
+    background-color: rgba(0,0,0,0.59);
+  }
+  
+  #ubi{
+    flex-flow: space-around;
+    width: 100%;
+  }
+
+  #ubi h1{
+    margin-top: 1em;
+    height: 2rem;
+    font-size: 2em;
+  }
+
+  #ubi iframe{
+    padding: 1.5rem;
+    width: 90%;
+    height: 20em;
+  }
+
+  #ubi h3{
+    font-size: 1em;
+    height: 3em;
+  }
+
+  .lineaubi{
+    width: 83%;
+    margin-left: 2em;
+  }
+  
+  .ubicacion{
+    color: var(--negro2); 
+    text-align: center;
+  }
+
+  #usuarios{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 7rem;
+  }
+
+  #usuarios p{
+    padding: 0.5em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #per {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 18rem;
+    margin-bottom: 18rem;
+  }
+
+  #per .personas{
+    margin-top: 1em;
+    padding: 3.6em;
+    color: white;
+    font-size: 0.8em;
+    width: 12rem;
+    height: 5rem;
+    text-align: center;
+  }
+
+  .personas{
+    background: url(../img/curvaindex.jpg);
+    background-position: 10% 50%; 
+  }
+
+  #per img{
+    width: 2em;
+    border-radius: 5em;
+  }
+
+  #per i{
+    display: none;
+  }
+
+  #per p{
+    font-size: 0.7rem;
+  }
+
+  #Mas-info{
+    background-color: var(--negro2);
+    font-family: 'Marcellus', serif;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  #Mas-info p{
+    color: white;
+  }
+
+  .lorem-redes{
+    text-align: left;
+    padding-top: 1em;
+  }
+
+  .direccion-telefono{
+    text-align: left;
+  }
+
+  .pp{
+    text-align: left;
+  }
+}
+
+/*----------------------------------------------------------- Formulario habitación GRID -----------------------------------------------------------*/
+
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+  .contenedorgrid{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 47em;
+  }
+  
+  .menulateral{
+      display: grid;
+      display: none;
+  }
+  
+  .habitacion3{
+      background: url(../img/forhabitacion.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 47em;
+  }
+
+  .titulo{
+      text-align: center;
+      font-size: 2.5em;
+      font-family:'Marcellus', serif;
+  }
+
+  .habitacion4{
+      border-radius: 1em;
+      background-color:  rgba(213, 212, 214, 0.838);
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      justify-content: center;
+      gap:2em;
+      margin-top: 1.5rem;
+      margin:3rem;
+      padding: 1em;
+      height: 39em;
+  }
+  
+  .habitacion5{
+      display: grid;
+      grid-template-columns: 60% 40%;
+      padding-left: 1em;
+  }
+
+  .habitacion6 p{
+      margin-top: 1em;
+  }
+
+  .nombrehabitacion{
+      width: 87%;
+  }
+
+  .iprincipal{
+      width: 87%;
+  }
+
+  .nhabitacion{
+      width: 87%;
+  }
+
+  .vreserva{
+      width: 87%;
+  }
+
+  .isecundaria{
+      width: 87%;
+  }
+
+  .habitacion7{
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+
+  .habitacion7 p{
+      font-size: 0.9em;
+  }
+
+  .habitacion7 input{
+      padding-left: 1em;
+      width: 65%;
+  }
+
+  .habitacion8 p{
+      margin-top: 1em;
+  }
+
+  .habitacion9{
+      padding-left: 1em;
+  }
+
+  .descrip{
+      width: 95%;
+      height: 5em;
+  }
+    
+  #checkboxs{
+      padding-left: 1.4em;
+  }
+
+  .fa-solid{
+      padding-right: 1.5em;
+      font-size: 1.9em;
+  }
+  
+  #registarf{
+      text-align: center;  
+  }
+  
+  .registar{
+      width: 10em;
+      height: 2em;
+      margin-top: 2em; 
+      background-color: var(--negro);
+      color: white;
+      font-family: 'Marcellus', serif;
+  }
+}
+
+/*Resolución tabletas*/
+@media screen and (max-width: 799.8px){
+  .contenedorgrid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 47em;
+  }
+
+  .menulateral{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    background-color: var(--azulnegro);
+    height: 47em;
+  }
+
+  .menuencabezado{
+    background: url(../img/curvadashboard.jpg);
+    background-size: cover;
+    
+  }
+  .menuencabezado img{
+    width: 80px;
+    padding-left: 1.5em;
+    padding-top: 1em;
+  }
+
+  .iconosmenu i{
+    color: white;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    font-size: 2em;
+  }
+  .salida i{
+    color: white;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-top: 6em;
+    font-size: 2em;
+  }
+
+  .habitacion3{
+    background: url(../img/forhabitacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 47em;
+  }
+
+  .titulo{
+      text-align: center;
+      font-size: 1.5em;
+      font-family:'Marcellus', serif;
+  }
+
+  .habitacion4{
+    background-color:  rgba(213, 212, 214, 0.838);
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    gap:2em;
+    margin-top: 1.5rem;
+    margin:1rem;
+    padding: 1em;
+    height: 42em;
+  }
+
+  .habitacion5{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding-left: 3em;
+  }
+
+  .nombrehabitacion{
+      width: 87%;
+  }
+
+  .iprincipal{
+      width: 87%;
+  }
+
+  .nhabitacion{
+      width: 87%;
+  }
+
+  .vreserva{
+      width: 87%;
+  }
+
+  .isecundaria{
+      width: 87%;
+  }
+
+  .habitacion7{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .habitacion7 p{
+    font-size: 0.9em;
+  }
+  .habitacion7 input{
+      padding-left: 1em;
+      width: 65%;
+  }
+  
+  .habitacion9{
+      padding-left: 3em;
+  }
+  .descrip{
+      width: 93%;
+      height: 5em;
+  }
+  
+  #checkboxs{
+      text-align: center;
+  }
+  .fa-solid{
+    padding-right: 1.5em;
+    font-size: 1.7em;
+  }
+
+  #registarf{
+    text-align: center;  
+  }
+
+  .registar{
+    width: 10em;
+    height: 2em;
+    margin-top: 2em; 
+    background-color: var(--negro);
+    color: white;
+    font-family: 'Marcellus', serif;
+  }
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+  .contenedorgrid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 47em;
+  }
+
+  .menulateral{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    background-color: var(--azulnegro);
+    height: 47em;
+  }
+
+  .menuencabezado{
+    background: url(../img/curvadashboard.jpg);
+    background-size: cover;
+    
+  }
+  .menuencabezado img{
+    width: 50px;
+    padding-left: 0.5em;
+    padding-top: 1em;
+  }
+
+  .iconosmenu i{
+    color: white;
+    text-align: center;
+    padding-left: 0.8em;
+    padding-top: 1em;
+    font-size: 1.5em;
+  }
+  .salida i{
+    color: white;
+    text-align: center;
+    padding-left: 0.8em;
+    padding-top: 1em;
+    font-size: 1.5em;
+  }
+
+  .habitacion3{
+    background: url(../img/forhabitacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 47em;
+  }
+  .habitacion4{
+    background-color:  rgba(213, 212, 214, 0.838);
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    gap:2em;
+    margin-top: 2rem;
+    margin:1rem;
+    padding: 1em;
+    height: 40em;
+  }
+
+  .habitacion5{
+    width: 100%;
+  }
+  .habitacion7{
+    display: grid;
+    grid-template-columns: 40% 50%;
+  }
+  .habitacion7 p{
+    font-size: 0.9em;
+  }
+  .ncamas{
+    width: 73%;
+  }
+
+  .nhuespedes{
+    width: 75%;
+  }
+
+  .descrip{
+    height: 5em;
+  }
+
+  .fa-solid{
+    padding-right: 1.3em;
+    font-size: 1.2em;
+  }
+
+  #registarf{
+    text-align: center;  
+  }
+
+  .registar{
+    width: 10em;
+    height: 2em;
+    margin-top: 2em; 
+    background-color: var(--negro);
+    color: white;
+    font-family: 'Marcellus', serif;
+  }
+}
+

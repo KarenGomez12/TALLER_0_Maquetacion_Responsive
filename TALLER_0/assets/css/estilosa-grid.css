@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin:0;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+  
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+    .contenedorgrid{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 47em;
+    }
+    
+    .menulateral{
+        display: grid;
+        display: none;
+    }
+    
+    .habitacion3{
+        background: url(../img/forhabitacion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 47em;
+    }
+  
+    .titulo{
+        text-align: center;
+        font-size: 2.5em;
+        font-family:'Marcellus', serif;
+    }
+  
+    .habitacion4{
+        border-radius: 1em;
+        background-color:  rgba(213, 212, 214, 0.838);
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        gap:2em;
+        margin-top: 1.5rem;
+        margin:3rem;
+        padding: 1em;
+        height: 39em;
+    }
+    
+    .habitacion5{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-left: 1em;
+    }
+
+    .habitacion6 p{
+        margin-top: 1em;
+    }
+  
+    .nombrehabitacion{
+        width: 87%;
+    }
+  
+    .iprincipal{
+        width: 87%;
+    }
+  
+    .nhabitacion{
+        width: 87%;
+    }
+  
+    .vreserva{
+        width: 87%;
+    }
+  
+    .isecundaria{
+        width: 87%;
+    }
+  
+    .habitacion7{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .habitacion7 p{
+        font-size: 0.9em;
+    }
+
+    .habitacion7 input{
+        padding-left: 1em;
+        width: 65%;
+    }
+
+    .habitacion8 p{
+        margin-top: 1em;
+    }
+
+    .habitacion9{
+        padding-left: 1em;
+    }
+
+    .descrip{
+        width: 95%;
+        height: 5em;
+    }
+      
+    #checkboxs{
+        padding-left: 1.4em;
+    }
+
+    .fa-solid{
+        padding-right: 1.5em;
+        font-size: 1.9em;
+    }
+    
+    #registarf{
+        text-align: center;  
+    }
+    
+    .registar{
+        width: 10em;
+        height: 2em;
+        margin-top: 2em; 
+        background-color: var(--negro);
+        color: white;
+        font-family: 'Marcellus', serif;
+    }
+}
+
+/*Resolución tabletas*/
+@media screen and (max-width: 799.8px){
+    .contenedorgrid{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 47em;
+    }
+  
+    .menulateral{
+      display: grid;
+      grid-template-rows: 200px 200px 200px;
+      background-color: var(--azulnegro);
+      height: 47em;
+    }
+  
+    .menuencabezado{
+      background: url(../img/curvadashboard.jpg);
+      background-size: cover;
+      
+    }
+    .menuencabezado img{
+      width: 80px;
+      padding-left: 1.5em;
+      padding-top: 1em;
+    }
+  
+    .iconosmenu i{
+      color: white;
+      text-align: center;
+      padding-left: 1.5em;
+      padding-top: 1em;
+      font-size: 2em;
+    }
+    .salida i{
+      color: white;
+      text-align: center;
+      padding-left: 1.5em;
+      padding-top: 6em;
+      font-size: 2em;
+    }
+  
+    .habitacion3{
+      background: url(../img/forhabitacion.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 47em;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 1.5em;
+        font-family:'Marcellus', serif;
+    }
+
+    .habitacion4{
+      background-color:  rgba(213, 212, 214, 0.838);
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      justify-content: center;
+      gap:2em;
+      margin-top: 1.5rem;
+      margin:1rem;
+      padding: 1em;
+      height: 42em;
+    }
+  
+    .habitacion5{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-left: 3em;
+    }
+
+    .nombrehabitacion{
+        width: 87%;
+    }
+
+    .iprincipal{
+        width: 87%;
+    }
+
+    .nhabitacion{
+        width: 87%;
+    }
+
+    .vreserva{
+        width: 87%;
+    }
+
+    .isecundaria{
+        width: 87%;
+    }
+
+    .habitacion7{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .habitacion7 p{
+      font-size: 0.9em;
+    }
+    .habitacion7 input{
+        padding-left: 1em;
+        width: 65%;
+    }
+    
+    .habitacion9{
+        padding-left: 3em;
+    }
+    .descrip{
+        width: 93%;
+        height: 5em;
+    }
+    
+    #checkboxs{
+        text-align: center;
+    }
+    .fa-solid{
+      padding-right: 1.5em;
+      font-size: 1.7em;
+    }
+  
+    #registarf{
+      text-align: center;  
+    }
+  
+    .registar{
+      width: 10em;
+      height: 2em;
+      margin-top: 2em; 
+      background-color: var(--negro);
+      color: white;
+      font-family: 'Marcellus', serif;
+    }
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+    .contenedorgrid{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      height: 47em;
+    }
+  
+    .menulateral{
+      display: grid;
+      grid-template-rows: 200px 200px 200px;
+      background-color: var(--azulnegro);
+      height: 47em;
+    }
+  
+    .menuencabezado{
+      background: url(../img/curvadashboard.jpg);
+      background-size: cover;
+      
+    }
+    .menuencabezado img{
+      width: 50px;
+      padding-left: 0.5em;
+      padding-top: 1em;
+    }
+  
+    .iconosmenu i{
+      color: white;
+      text-align: center;
+      padding-left: 0.8em;
+      padding-top: 1em;
+      font-size: 1.5em;
+    }
+    .salida i{
+      color: white;
+      text-align: center;
+      padding-left: 0.8em;
+      padding-top: 1em;
+      font-size: 1.5em;
+    }
+  
+    .habitacion3{
+      background: url(../img/forhabitacion.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 47em;
+    }
+    .habitacion4{
+      background-color:  rgba(213, 212, 214, 0.838);
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      justify-content: center;
+      gap:2em;
+      margin-top: 2rem;
+      margin:1rem;
+      padding: 1em;
+      height: 40em;
+    }
+  
+    .habitacion5{
+      width: 100%;
+    }
+    .habitacion7{
+      display: grid;
+      grid-template-columns: 40% 50%;
+    }
+    .habitacion7 p{
+      font-size: 0.9em;
+    }
+    .ncamas{
+      width: 73%;
+    }
+  
+    .nhuespedes{
+      width: 75%;
+    }
+  
+    .descrip{
+      height: 5em;
+    }
+  
+    .fa-solid{
+      padding-right: 1.3em;
+      font-size: 1.2em;
+    }
+  
+    #registarf{
+      text-align: center;  
+    }
+  
+    .registar{
+      width: 10em;
+      height: 2em;
+      margin-top: 2em; 
+      background-color: var(--negro);
+      color: white;
+      font-family: 'Marcellus', serif;
+    }
+  }
+
