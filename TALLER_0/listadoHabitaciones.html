@@ -7,42 +7,103 @@
     <!--La siguiente linea es para los iconos-->
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado Habitaciones</title>
+    <title>Listado Habitación</title>
 </head>
-<body id="dash1/cuerpohabi">
-    <nav id="dash/navhabi">
-        <div id="dash2/nav1">
-            <div class="divAnguieV">
-                <img class="divimg2" src="assets/img/Hotelia horizontal blanco.svg">
-                <h3>Anguie Vargas</h3>
-                <p>anguievargas2@gmail.com</p>
-            </div>   
-        </div>
-        <div class="menu2/nav2">
-            <a href="#" class="items"><i class="fa-solid fa-bed"></i>Habitaciones</a>
-            <a href="#" class="items"><i class="fa-solid fa-bed"></i>Registar habitaciones</a>
-            <a href="#" class="items"><i class="fa-solid fa-pen"></i>Editar perfil</a>
-        </div>
 
-        <div class="cerrar/nav3">
-            <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>  Cerrar Sesión</a>
-        </div>
-    </nav>
-    <section id="sectionlh">
-        <div class="titulohabitacion">
-            <h4>Habitaciones</h4>
-        </div>
-        <div class="categoria">
-            <p>Categoria <input class="categoria1" type="text" required="obligatorio"></p>
-        </div>
-        <div class="estado">
-            <p>Estado <input class="estado1" type="text" required="obligatorio"></p>
-        </div>
-        <div id="divcajagrande">
-            <div>
-                <img src="" >
+<body>
+    <div id="contenedor">  
+        <aside class="listadohabitacion">
+
+            <div class="menulateral1">
+                <img class="imagen1" src="assets/img/Hotelia horizontal blanco.svg">
+                <div class="AnguieeV">
+                    <img class="muñecaAnguie"src="assets/img/muñecaAnguie.png">
+                    <div class="nombre">
+                        <h3>Anguie Vargas</h3>
+                        <p>anguievargas2@gmail.com</p>
+                    </div>
+                </div>    
             </div>
-        </div>
-    </section>
+
+            <div class="menulateral2">
+                <a href="" class="items"><i class="fa-solid fa-bed"></i> Habitaciones</a>
+                <a href="form-habitacion-grid.html" class="items"><i class="fa-solid fa-bed"></i> Registrar habitaciones</a>
+                <a href="" class="iitems"><i class="fa-solid fa-pen"></i> Editar Perfil</a>
+            </div>
+            <div class="salida">
+                    <a href="index.html" ><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a>
+            </div>
+        </aside>
+        
+        <section class="habitaciones">
+            <div id="reservas">
+                <div class="titulohabi">
+                  <p>Habitaciones</p>  
+                </div>
+                <div class="categoriaestado">
+                    <p class="cate">Categoría </p> 
+                    <select name="categoria" id="categoria">
+                        <option value="value1">Todas</option>
+                        <option value="value2">Sencilla</option>
+                        <option value="value3">Doble</option>
+                    </select>
+                    <p>Estado </p> 
+                    <select name="estado" id="estado">
+                        <option value="value3">Todas</option>
+                        <option value="value4">Reservada</option>
+                        <option value="value5">Disponible</option>
+                    </select>
+                </div>
+                <div class="camas">
+                    <div class="fila1">
+                       <div class="cama1">
+                            <img class="imagen2"src="assets/img/cama1.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$128.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div>
+                        <div class="cama2">
+                            <img class="imagen2"src="assets/img/cama2.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$250.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div>
+                        <div class="cama3">
+                            <img class="imagen2"src="assets/img/cama3.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$166.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div> 
+                    </div>
+                    <div class="fila2">
+                        <div class="cama1">
+                            <img class="imagen2"src="assets/img/cama3.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$220.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div>
+                        <div class="cama2">
+                            <img class="imagen2"src="assets/img/cama1.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$180.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div>
+                        <div class="cama3">
+                            <img class="imagen2"src="assets/img/cama2.jpg">
+                            <p class="decripcion">Habitación doble</p>
+                            <p class="precio">$195.000</p>
+                            <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="modificar">Modificar</button><button class="estado">Inactivar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>  
 </body>
 </html>

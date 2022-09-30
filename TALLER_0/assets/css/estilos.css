@@ -807,7 +807,7 @@
 
   .home{
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 1em;
   }
 
@@ -838,7 +838,7 @@
   }
   
   .user{
-    font-size: 2.6em;
+    font-size: 3em;
     margin-top: 1rem;
     margin-bottom: 1.6rem;
     margin-left: 12rem;
@@ -848,11 +848,11 @@
     height: 1.3em;
   }
   
-  .fa-user{
+  .user i{
     color: white;
     text-align: center;
-    font-size: 2rem;
-    margin-left: 0rem;
+    font-size: 1em;
+    margin-left: 0.6rem;
   }
 
   #Login p{
@@ -863,13 +863,14 @@
   }
 
   #Login a{
-    color:#000
+    color:white
   }
 
   .Controles{
     width: 18rem;
     height: 1.5rem;
   }
+
   .BotonLogin{
     font-size: 1.1em;
     width: 18.6rem;
@@ -1070,7 +1071,7 @@
 
 /*-----------------------------------------------------------DASHBOARD-----------------------------------------------------------*/
 /*Resolución notebooks y deskop*/
-@media screen and (min-width: 500px){
+@media screen and (min-width: 800px){
   #dash1{
     display: flex;
     flex-direction: row;
@@ -1160,13 +1161,13 @@
     background-color: rgba(213, 212, 214, 0.838);
     border-radius: 1em;
     height: 41em;
-    margin: 2em;
+    margin: 4.5em;
   }
 
   #An h2{
     text-align: left;
     padding-top: 1em;
-    padding-left: 10em;
+    padding-left: 20em;
   }
   
   #Ann{
@@ -1191,7 +1192,7 @@
 
   .an2{
     padding-top: 1em;
-    padding-left: 2em;
+    padding-left: 5em;
   }
 
   .an2 p{
@@ -1221,13 +1222,13 @@
   
   .an3{
     padding-top: 1.2em;
-    padding-left: 1em;
+    padding-left: 8em;
   }
 
 
   .an4{
     padding-top: 1.2em;
-    padding-left: 1em;
+    padding-left: 7em;
   }
 
   .actualizar{
@@ -1261,8 +1262,165 @@
   }
 }
 
+/*Resolución tablet*/
+@media screen and (max-width: 799.8px){
+#dash1{
+  display: flex;
+  flex-direction: row;
+}
+
+#dash{
+  display: none;
+}
+
+.menulateral1{
+  background-color: var(--azulnegro);
+  height: 47em;
+  width: 4em;
+}
+
+.menuencabezado1{
+  background: url(../img/curvadashboard.jpg);
+  background-size: cover;
+}
+
+.menuencabezado1 img{
+  width: 30px;
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+.iconosmenu1 i{
+  color: white;
+  text-align: center;
+  padding-left: 1em;
+  padding-top: 1.5em;
+  font-size: 1em;
+}
+.salida1 i{
+  color: white;
+  text-align: center;
+  padding-left: 1em;
+  padding-top: 20em;
+  font-size: 1em;
+}
+
+#cuerporegistro{
+  background: url(../img/fdashboard.jpeg);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  background-size: cover;
+  width: 100%;
+  height: 47em;
+  
+}
+
+#An{
+  background-size: cover;
+  background-color: rgba(213, 212, 214, 0.838);
+  border-radius: 1em;
+  height: 45.4em;
+  width: 20em;
+  margin-top: 1em;
+  margin-left: 10em;
+}
+
+#An h2{
+  text-align: center;
+  padding-top: 1em;
+  font-size: 1.1em;
+}
+
+#Ann{
+  display: flex;
+  flex-direction: column;
+}
+
+#Ann p{
+  margin-top: 0.2em;
+}
+
+.Controles2{
+  width: 14em;
+  height: 1em;
+}
+
+.an2 img{
+  padding-left: 2em;
+  width: 6em;
+}
+
+.an2{
+  padding-left: 5em;
+}
+
+.an2 p{
+  margin-left: 2em;
+  background-color: var(--azuloscuro);
+  color: white;
+  width: 6em;
+  height: 1.5em;
+}
+
+.ann2{
+  display: none;
+}
+
+.an2 i{
+  padding-left: 2em;
+  margin-top: 0.1em;
+  font-size: 1.2em;
+}
+
+.cambiocontraseña{
+  display: none;
+}
+
+#contraseña{
+  width: 14em;
+  height: 1em;
+}
+
+.an3{
+  padding-left: 4em;
+}
+
+.an4{
+  padding-left: 4em;
+}
+
+.actualizar{
+  font-family: 'Marcellus', serif;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  width: 6em;
+  height: 1.5em;
+  color: white;
+  background-color: var(--negro2);
+}
+
+.Cambiar{
+  font-family: 'Marcellus', serif;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  width: 6em;
+  height: 1.5em;
+  color: white;
+  background-color: var(--negro2);
+}
+
+.confirmicontra{
+  margin-top: 0.2em;
+}
+
+.confirmicontra input{
+  margin-top: 0.7Sem;
+  width: 14em;
+  height: 1em;
+}
+}
+
 /*Resolución mobile*/
-@media screen and (max-width: 499.9px){
+@media screen and (max-width: 460px){
   #dash1{
     display: flex;
     flex-direction: row;
@@ -1310,6 +1468,7 @@
     background-size: cover;
     width: 100%;
     height: 47em;
+    
   }
 
   #An{
@@ -1317,8 +1476,9 @@
     background-color: rgba(213, 212, 214, 0.838);
     border-radius: 1em;
     height: 45em;
-    width: 14em;
-    margin: 0.8em;
+    width: 17em;
+    margin-top: 1em;
+    margin-left: 1.5em;
   }
 
   #An h2{
@@ -1342,16 +1502,18 @@
   }
 
   .an2 img{
-    padding-left: 2em;
-    width: 6em;
+    padding-left: 4em;
+    height: 4em;
+    width: 4em;
   }
 
   .an2{
     padding-left: 2em;
+    margin-top: 1.5em;
   }
 
   .an2 p{
-    margin-left: 2em;
+    margin-left: 3em;
     background-color: var(--azuloscuro);
     color: white;
     width: 6em;
@@ -1378,11 +1540,11 @@
   }
   
   .an3{
-    padding-left: 1em;
+    padding-left: 2em;
   }
 
   .an4{
-    padding-left: 1em;
+    padding-left: 2em;
   }
 
   .actualizar{
@@ -1415,10 +1577,102 @@
     height: 1em;
   }
 }
-
 /*-----------------------------------------------------------Nuevo Registro-----------------------------------------------------------*/
-@media screen and (min-width: 700px){
-  
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+    #body{
+      background: url(../img/nuevoresgistro.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      width: 100%;
+      height: 45rem;
+    }
+
+    #cuerporegistrate{
+      display: flex;
+      flex-direction: row;
+    }
+
+    #primeraparte{
+      display: flex;
+      flex-direction: column;
+      text-align:center;
+      background-color:  var(--azuloscuro);
+      background-color: #05569dad;
+      font-family: 'Marcellus', serif;
+      width: 25em;
+      height: 47rem;
+    }
+
+    #primeraparte a{
+      padding-top: 15em;
+      text-align: center;
+    }
+
+
+    #primeraparte p{
+      margin-top:0.3em;
+      text-align: center;
+      font-size: 2.4em;
+      color: white;
+    }
+
+    #segundaparte{
+      background-size: cover;
+      background-color: rgba(213, 212, 214, 0.838);
+      border-radius: 1em;
+      width: 60em;
+      height: 43em;
+      margin: 3em;
+    }
+
+    #segundaparte h1{
+      font-family: 'Marcellus', serif;
+      font-size: 3em;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    #segundaparte2{
+      margin-left: 6em;
+      margin-top: 1.5em;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .izq{
+      margin-left: 5em;
+      padding-right: 8em;
+    }
+
+    .Gen{
+      margin-top: 1.1em;
+    }
+
+    .adicional{
+      margin-top: 1em;
+      width: 17em;
+      height: 2em;
+    }
+
+    #terminoscondiciones{
+      margin-top: 1em;
+      text-align: center;
+    }
+
+    .ingre{
+      margin-left: 25em;
+      font-family: 'Marcellus', serif;
+      font-size: 1em;
+      width: 10em;
+      height: 2em;
+      color: white;
+      background-color: var(--negro2);
+    }
+  }
+  /*Resolución tablet*/
+  @media screen and (max-width: 799.8px){
   #body{
     background: url(../img/nuevoresgistro.jpg);
     background-repeat: no-repeat;
@@ -1440,20 +1694,20 @@
     background-color:  var(--azuloscuro);
     background-color: #05569dad;
     font-family: 'Marcellus', serif;
-    width: 25em;
+    width: 10em;
     height: 47rem;
   }
 
-  #primeraparte a{
+  #primeraparte img{
     padding-top: 15em;
+    width:10em;
     text-align: center;
   }
-
 
   #primeraparte p{
     margin-top:0.3em;
     text-align: center;
-    font-size: 2.4em;
+    font-size: 1em;
     color: white;
   }
 
@@ -1461,7 +1715,7 @@
     background-size: cover;
     background-color: rgba(213, 212, 214, 0.838);
     border-radius: 1em;
-    width: 80em;
+    width: 25em;
     height: 43em;
     margin: 2em;
   }
@@ -1474,14 +1728,28 @@
   }
 
   #segundaparte2{
-    margin-top: 1.5em;
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
   }
 
   .izq{
+    width: 8em;
+    margin-left: 1em;
+    padding-right: 1em;
+  }
+
+  .izq input{
+    width: 10em;
+  }
+
+  .der{
     margin-left: 4em;
-    padding-right: 2em;
+    width: 10em;
+  }
+
+  .der input{
+    width: 10em;
   }
 
   .Gen{
@@ -1490,26 +1758,27 @@
 
   .adicional{
     margin-top: 1em;
-    width: 17em;
+    width: 12em;
     height: 2em;
   }
 
   #terminoscondiciones{
-    margin-top: 1em;
+    margin-top: 0.1em;
     text-align: center;
   }
 
-  .ingre{margin-left: 14em;
+  .ingre{
+    margin-left: 7em;
     font-family: 'Marcellus', serif;
     font-size: 1em;
     width: 10em;
     height: 2em;
     color: white;
     background-color: var(--negro2);
+  }    
   }
-}
-
-@media screen and (max-width: 699.9px){
+  /*Resolución mobile*/
+  @media screen and (max-width: 460px){
   body{
     background: url(../img/nuevoresgistro.jpg);
     background-repeat: no-repeat;
@@ -1532,11 +1801,7 @@
     background-color: #05569dad;
     font-family: 'Marcellus', serif;
     width: 100%;
-    height: 4rem;
-  }
-
-  #primeraparte a{
-    text-align: center;
+    height: 3rem;
   }
 
   img{
@@ -1544,10 +1809,8 @@
     height: 2.5em;
   }
 
-
   #primeraparte p{
     text-align: center;
-    font-size: 0.7em;
     color: white;
   }
 
@@ -1566,20 +1829,21 @@
     background-color: rgba(213, 212, 214, 0.838);
     border-radius: 1em;
     width: 19em;
-    height: 52em;
-    margin-left: 1em;
+    height: 42em;
+    margin-left: 3em;
   }
 
   #segundaparte p{
-    font-size: 1em;
+    width: 10em;
   }
 
   #segundaparte h1{
-    font-family: 'Marcellus', serif;
+    font-size: 1.5em;
     text-align: center;
   }
 
   #segundaparte2{
+    margin-left: 2em;
     display: flex;
     flex-direction: column;
   }
@@ -1589,175 +1853,179 @@
   }
 
   .izq p{
-    font-size: 1em;
+    font-size: 0.8em;
   }
-  
+
   .der{
     margin-left: 1em;
   }
 
   .der p{
-    font-size: 1em;
+    font-size: 0.8em;
   }
-
+  .Gen{
+    font-size: 0.4em;
+  }
   .adicional{
     width: 17em;
     height: 1em;
   }
 
   #terminoscondiciones{
+    font-size: 1em;
     text-align: left;
-    margin-left: 1em;
+    margin-left: 2.2em;
   }
 
   .ingre{
-    margin-left: 5em;
+    margin-left: 7em;
     font-family: 'Marcellus', serif;
     font-size: 1em;
     width: 6em;
     height: 1.5em;
     color: white;
     background-color: var(--negro2);
-  }
+  }  
 }
 
 /*----------------------------------------------------------- Formulario Habitación-----------------------------------------------------------*/
-
-#habitacion{
-  display: flex;
-  flex-direction: row;
-}
-
-.menulateral{
-  display: none;
-}
-
-.habitacion2{
-  background-color: white;
-  width: 15.5em;
-  height: 47em;
-}
-
-.habitacion3{
-  background: url(../img/forhabitacion.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100%;
-  height: 47em;
-}
-
-.habitacion4{
-  background-color: rgba(213, 212, 214, 0.838);
-  border-radius: 1em;
-  height: 41em;
-  margin: 3em;
-}
-
-.titulo{
-  font-family: 'Marcellus', serif;
-  font-size: 2.5em;
-  padding-top: 0.8em;
-  text-align: center;
-}
-
-.habitacion5{
-  display: flex;
-  flex-direction: row;
-}
-
-.habitacion6{
-  padding-left: 3em;
-  padding-top: 1em;
-  width: 20em;
-}
-
-.habitacion6 p{
-  padding-top: 1em;
-}
-.nombrehabitacion{
-  margin-top: 0.5em;
-  width: 23em;
-}
-
-.habitacion7{
-  display: flex;
-  flex-direction: row;
-}
-
-.habi7{
-  flex-direction: column;
-  padding-right: 2em;
-}
-
-.ncamas{
-  width: 10em;
-}
-
-.habit7{
-  flex-direction: column;
-}
-
-.nhuespedes{
-  width: 10em;
-}
-
-.iprincipal{
-  margin-top: 0.1em;
-  width: 23em;
-}
-
-.habitacion8{
-  padding-left: 5em;
-  margin-top: 1.5em;
-  display: flex;
-  flex-direction: column;
-}
-
-.habitacion8 p{
-  margin-top: 0.5em;
-}
-
-.habitacion8 input{
-  width: 15em;
-  margin-top: 0.5em;
-}
-
-.habitacion9{
-  padding-left: 3em;
-  margin-top: 2em;
-}
-
-.habitacion9 input{
-  width: 45em;
-  height: 5em;
-}
-
-#checkboxs{
-  margin-top: 3em;
-  padding-left: 3em;
-}
-
-.fa-solid{
-  padding-right: 1.7em;
-  font-size: 2em;
-}
-
-#registarf{
-  text-align: center;  
-}
-
-.registar{
-  width: 10em;
-  height: 2em;
-  margin-top: 3em; 
-  background-color: var(--negro);
-  color: white;
-  font-family: 'Marcellus', serif;
-}
-
 /*Resolución notebooks y deskop*/
 @media screen and (min-width: 500px){
+  #habitacion{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menulateral{
+    display: none;
+  }
+
+  .habitacion2{
+    background-color: white;
+    width: 15.5em;
+    height: 47em;
+  }
+
+  .habitacion3{
+    background: url(../img/forhabitacion.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 47em;
+  }
+
+  .habitacion4{
+    background-color: rgba(213, 212, 214, 0.838);
+    border-radius: 1em;
+    height: 41em;
+    margin: 3em;
+  }
+
+  .titulo{
+    font-family: 'Marcellus', serif;
+    font-size: 2.5em;
+    padding-top: 0.8em;
+    text-align: center;
+  }
+
+  .habitacion5{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .habitacion6{
+    padding-left: 3em;
+    padding-top: 1em;
+    width: 20em;
+  }
+
+  .habitacion6 p{
+    padding-top: 1em;
+  }
+  .nombrehabitacion{
+    margin-top: 0.5em;
+    width: 23em;
+  }
+
+  .habitacion7{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .habi7{
+    flex-direction: column;
+    padding-right: 2em;
+  }
+
+  .ncamas{
+    width: 10em;
+  }
+
+  .habit7{
+    flex-direction: column;
+  }
+
+  .nhuespedes{
+    width: 10em;
+  }
+
+  .iprincipal{
+    margin-top: 0.1em;
+    width: 23em;
+  }
+
+  .habitacion8{
+    padding-left: 5em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .habitacion8 p{
+    margin-top: 0.5em;
+  }
+
+  .habitacion8 input{
+    width: 15em;
+    margin-top: 0.5em;
+  }
+
+  .habitacion9{
+    padding-left: 3em;
+    margin-top: 2em;
+  }
+
+  .habitacion9 input{
+    width: 45em;
+    height: 5em;
+  }
+
+  #checkboxs{
+    margin-top: 3em;
+    padding-left: 3em;
+  }
+
+  .fa-solid{
+    padding-right: 1.7em;
+    font-size: 2em;
+  }
+
+  #registarf{
+    text-align: center;  
+  }
+
+  .registar{
+    width: 10em;
+    height: 2em;
+    margin-top: 3em; 
+    background-color: var(--negro);
+    color: white;
+    font-family: 'Marcellus', serif;
+  }
+}
+/*Resolución notebooks y deskop*/
+@media screen and (max-width: 499.8px){
   #dash1{
     display: flex;
     flex-direction: row;
@@ -1832,4 +2100,293 @@
     font-size: 1.4em;
     color: white;
   }
+}
+
+/*--------------------------------------------- LISTADOHABITACIÓN--------------------------------------*/
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+  #contenedor{
+    display: flex;
+    flex-direction: row;
+  }
+  .menulateral1{
+    background: url(../img/curvadashboard.jpg);
+    height: 12em;
+  }
+  .imagen1{
+    padding: 2rem;
+    width: 12em;
+  }
+  .muñecaAnguie{
+    margin-left: 1em;
+    width: 3em;
+    border-radius: 0.3em;
+  }
+  
+  .AnguieeV{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .AnguieeV h3 {
+    margin-left: 1.4em;
+    color: white;
+  } 
+  .AnguieeV p {
+    margin-left: 2em;
+    color: white;
+    font-size: 0.7em;
+  } 
+  .listadohabitacion{
+    background-color: var(--negro);
+    height: 47em;
+    width: 20em;
+  }
+
+  .menulateral2{
+    display: flex;
+    flex-direction: column;
+  }
+  .items{
+    margin-top: 0.5em;
+    color: white;
+  }
+  .iitems{
+    margin-top: 2.5em;
+    margin-left: 1em;
+    color: white;
+  }
+  .salida{
+    margin-top: 18em;
+    margin-left: 1em;
+    color: white;
+  }
+  
+  .habitaciones{
+    background-color:var(--blanco);
+  }
+  .titulohabi{
+    font-family: 'Marcellus', serif;
+    font-size: 3em;
+    margin-left: 10em;
+    margin-top: 0.3em;
+  }
+  .categoriaestado{
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+  }
+  .cate{
+    margin-left: 26em;
+  }
+  .categoriaestado p{
+    font-family:'Arial';
+    font-size: 1em;
+  }
+  select{
+    margin-right: 8em;
+  }
+  .camas{
+    width: 75em;
+    height: 40.15em;
+  }
+  .fila1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fila2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cama1{
+    background-color:#f4f2ee;
+    width: 20em;
+    margin-left: 6em;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  .cama2{
+    background-color:#f4f2ee;
+    width: 20em;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  .cama3{
+    background-color:#f4f2ee;
+    width: 20em;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  .imagen2{
+    margin-top: 1.2em;
+    width: 13em;
+    height: 10em;
+    margin-left: 3em;
+  }
+  .decripcion{
+    background-color: #0e64b06e;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 4em;
+  }
+
+  .precio{
+    margin-top: 0.2em;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+  }
+  
+  .frase{
+    text-align: center;
+  }
+
+  .botonlistado{
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 0.2em;
+  }
+  .modificar{
+    color: var(--blanco);
+    background-color: var(--negro);
+    margin-left: 5em;
+    margin-right: 4em;
+  }
+  .estado{
+    color: var(--blanco);
+    background-color:#9C2759;
+  }
+}
+
+/*Resolución tablet*/
+@media screen and (max-width: 799.8px){
+  
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+  
+}
+
+/*--------------------------------------------- Busqueda habitación --------------------------------------*/
+/*Resolución notebooks y deskop*/
+@media screen and (min-width: 800px){
+  #partes{
+    display: flex;
+    flex-direction: row;
+  }
+   
+  .caj1{
+    background-color:#ecebea;
+    width: 20em;
+    height: 18em;
+    margin-left: 10em;
+    margin-top: 15em;
+  }
+
+  .busqueda{
+    height: 2em;
+    color: var(--blanco);
+    background-color: var(--azuloscuro);
+    border-radius: 0.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .busqueda h3{
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+  }
+
+  .ESAN input{
+    text-align: center;
+    width: 14em;
+  }
+  .dts{
+    font-family: 'Arial';
+    margin-top: 1em;
+    margin-left: 0.8em;
+  }
+
+  .dtss{
+    margin-left: 0.9em;
+  }
+
+  .disponibilidad{
+    margin-top: 2em;
+    margin-left: 5em;
+  }
+
+  .disponibilidad h4{
+    color: var(--blanco);
+  }
+
+  .dispo{
+    background-color: var(--negro2);
+  }
+
+  .camass{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6em;
+  }
+
+  .fila11{
+    margin-left: 8em;
+  }
+  .cama22{
+    background-color:#f4f2ee;
+    width: 18em;
+    height: 16em;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  .imagen22{
+    margin-top: 1em;
+    width: 12em;
+    height: 10em;
+    margin-left: 3em;
+  }
+
+  .decripcionn{
+    background-color: #0e64b06e;
+    text-align: center;
+    font-size: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .precio{
+    font-family: 'Marcellus', serif;
+    text-align: center;
+  }
+
+  .reservar1{
+    color: var(--blanco);
+    background-color:var(--azuloscuro);
+    width: 10em;
+    margin-left: 6em;
+  }
+  .reservar2{
+    color: var(--blanco);
+    background-color:var(--negro2);
+    width: 10em;
+    margin-left: 6em;
+  }
+  
+}
+
+/*Resolución tablet*/
+@media screen and (max-width: 799.8px){
+  
+}
+
+/*Resolución mobile*/
+@media screen and (max-width: 460px){
+
 }
